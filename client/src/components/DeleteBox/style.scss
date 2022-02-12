@@ -1,0 +1,19 @@
+@import "../../assets/style/global";
+
+.delete-box {
+  @include box;
+  @include box-animate;
+
+  .input-items {
+    flex-direction: row !important;
+  }
+  .delete-btn {
+    @include btn-adv($light-red, $dark-red);
+    font-size: 16px;
+    margin-left: 40px;
+  }
+  .abort-btn {
+    @include btn-adv($light-purple, $dark-purple);
+    font-size: 16px;
+  }
+}

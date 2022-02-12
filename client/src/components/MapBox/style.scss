@@ -1,0 +1,16 @@
+@import "../../assets/style/global";
+
+.map-box-container {
+  @include box;
+  @include box-animate;
+  width: 800px;
+  max-width: 95%;
+  height: 400px;
+
+  .mark-img {
+    width: 50px;
+    height: 40px;
+    object-fit: contain;
+    transform: translate(50%, -100%);
+  }
+}

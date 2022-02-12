@@ -1,0 +1,29 @@
+@import "../../assets/style/global";
+
+.table-container {
+  @include table-container;
+  .btn-edit {
+    @include btn-adv($light-green, $dark-green);
+    padding: 2px 10px;
+    font-size: 12px;
+  }
+  .maps-btn {
+    @include btn-adv($dark-blue, $light-blue);
+    padding: 2px 10px;
+    font-size: 12px;
+    &:hover {
+      background-color: $black;
+    }
+  }
+  .whatsapp-btn {
+    width: 25px;
+    margin-left: 15px;
+  }
+  .video-frame {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 250px;
+    height: 130px;
+  }
+}
